@@ -1,0 +1,9 @@
+#container{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    background: url("https://ak2.picdn.net/shutterstock/videos/2370572/thumb/1.jpg?i10c=img.resize(height:160)");
+    background-size: cover;
+}
+h1{
+    font-size: 60px;
+}
