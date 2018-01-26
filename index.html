@@ -11,18 +11,41 @@
 
 <body id="container">
     <h1>Crystal Game</h1>
-    <div>Click the crystals below to try to match the winning number. If you go over,you will have 10 years of bad luck.</div>
-    <img class="crystalball" src="http://i0.wp.com/www.psychics4today.com/wp-content/uploads/2015/04/using-a-crystal-ball-281x300.jpg"
-    alt="crystalball" />
-    <h3>Winning Number:</h3>
-    <div id="winNumShow"></div>
-    <h3>Current Number</h3>
-    <div id="totalGuessShow"></div>
+    <div id="direc">Click the crystals below to try to match the winning number. If you go over,you will have 10 years of bad luck.</div>
+    <div class="row bodyform">
+        <!-- <img class="crystalball col-md-3 col-md-offset-3" src="http://i0.wp.com/www.psychics4today.com/wp-content/uploads/2015/04/using-a-crystal-ball-281x300.jpg"
+            alt="crystalball" /> -->
+        <!-- <div class="col-md-6"> -->
+        <div class="col-md-6 col-sm-6">
+            <h3>Winning Number:</h3>
+            <div class="row" id="winNumShow"></div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <h3>Current Number:</h3>
+            <div class="row" id="totalGuessShow"></div>
+        </div>
+        <!-- </div> -->
+    </div>
     <br>
-    <div id="crystal1"></div>
-    <div id="crystal2"></div>
-    <div id="crystal3"></div>
-    <div id="crystal4"></div>
+    <div id="row">
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <img id="crystal1" class="pic" src="https://www.goldinart.com/wp-content/uploads/2014/08/round-brilliant.jpg" alt="crystal1"
+            />
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <img id="crystal2" class="pic" src="https://fthmb.tqn.com/nxQGfkXjLYoUJbuAxLhTWxuZmZc=/768x0/filters:no_upscale()/amethyst-geode-56a12dde3df78cf772682e0f.jpg"
+                alt="crystal2" />
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <img id="crystal3" class="pic" src="http://www.thatpetplace.com/272292.jpg" alt="crystal3" />
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <img id="crystal4" class="pic" src="https://atom.club/wp-content/uploads/3-inch_dyed_agate_geode.jpg_4.jpg" alt="crystal4"
+            />
+        </div>
+    </div>
+    <h3>Wins:</h3>
+    <div id="win"></div>
 
     <script type="text/javascript" src="https://codisteinborn.github.io/dom/dom.js"></script>
     <script src="assets/javascript/game.js" type="text/javascript"></script>
