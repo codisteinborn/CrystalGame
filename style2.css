@@ -1,0 +1,252 @@
+@keyframes shake{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* shake keyframe code from C3 website */
+
+nav{
+    margin-bottom: 18px;
+    height: 100px;
+    background-color: whitesmoke;
+    color: rgb(233, 135, 152);
+    border-style: solid;
+    border-width: 15px;
+    border-color: white;
+    border-radius: 25px;
+}
+.navbar-default{
+    background-color: whitesmoke;
+    color: rgb(233, 135, 152);
+}
+.navbar-default .navbar-brand {
+    color: rgb(233, 135, 152);
+    font-size: 30px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: rgb(233, 135, 152);
+}
+body{
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/regal.png");
+    padding-bottom: 10px;
+}
+article{
+    padding:10px;
+    /* float: left; */
+    line-height: 2;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    border-radius: 25px;
+    color: rgb(233, 135, 152);
+    font-family: 'Lato', sans-serif;
+    clear:both;
+    
+}
+article2{
+    padding:10px;
+    float: left;
+    line-height: 2;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    border-radius: 25px;
+    color: rgb(233, 135, 152);
+    font-family: 'Lato', sans-serif;
+    clear:both;
+    
+}
+aside{
+    text-align: center;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    border-radius: 25px;
+    color: rgb(233, 135, 152);
+    font-family: 'Lato', sans-serif;
+    clear: both;
+    margin-bottom: 5px;
+}
+
+h1, h2, h3{
+    font-family: 'Lato', sans-serif;
+    color: rgb(233, 135, 152);
+}
+h1{
+    float: left;
+    margin-left: 15px;
+    font-size: 40px;
+}
+h2{
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 3px;
+}
+h3{
+    text-align: center;
+}
+p{
+    color: rgb(233, 135, 152);
+}
+.link{
+    /* float: right; */
+    padding: 5px;
+    /* margin: 15px; */
+    /* margin-top: 35px; */
+    color: rgb(233, 135, 152);
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+.link:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    color: black;
+}
+.navbar-default .navbar-brand .navbar-nav>li>a{
+    color: rgb(233, 135, 152);
+}
+#mepic{
+    width: 220px;
+    height: 180px;
+    margin: 10px;
+    float: left;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+}
+.portpic{
+    float:left;
+    width: 200px;
+    height: 150px;
+    margin: 15px;
+    position: relative;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    z-index: 3;
+}
+.social{
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    
+}
+.social:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+.footer{
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height:30px;
+    color: gray;
+    background-color: rgb(184, 178, 178);
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    padding: 20px;
+    clear:both;
+ 
+}
+#foot{
+    text-align: center;
+    /* position: relative; */
+    bottom:0;
+    left:0;
+    width: 100%;
+    height:30px;
+    color: gray;
+    background-color: rgb(184, 178, 178);
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    padding: 20px;
+    clear:both;
+    margin-top: 5px;
+}
+#contactform{
+    text-align: left;
+}
+#message{
+    width: 400px;
+    height: 150px;
+}
+.navbar-brand:hover{
+    color: rgb(233, 135, 152);
+}
+#fname:focus{
+    background: lightblue;
+}
+#lname:focus{
+    background: lightblue;
+}
+#message:focus{
+    background: lightblue;
+}
+label{
+    margin-top: 0px;
+    float: left;
+    margin-right: 10px;
+}
+/* #pictext{
+    position:absolute;
+    bottom:0px;
+    padding: 15px;
+    margin: auto;
+} */
+
+#port{
+    text-align: center;
+    /* position: relative; */
+    /* float: left; */
+    margin-right: 5px;
+    z-index: 2;
+ 
+}
+
+
+#doggy, #kitty, #fishy, #turtly, #bunnyy{
+    height: 250px;
+    float: left;
+    position: relative;
+}
+
+button{
+    width: 55px;
+}
+.navbar-right{
+    font-family: 'Lato', sans-serif;
+    color: rgb(233, 135, 152);
+    background-color: whitesmoke;
+}
+.container{
+    margin-bottom:5px;
+}
+
+/* .box1{
+border-style: solid;
+border-color: blue;
+border-width: 5px;
+ }*/
+
+/* .box2{
+margin-bottom:5px;
+}  */
