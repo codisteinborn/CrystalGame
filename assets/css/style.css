@@ -21,7 +21,7 @@ h1{
     float: center;
 }
 
-#totalGuessShow, #winNumShow, #win{
+#totalGuessShow, #winNumShow, #win, #loss{
     font-size: 30px;
 }
 @keyframes shake{
@@ -41,4 +41,7 @@ h1{
 .pic:hover{
     animation: shake 0.5s;
     animation-iteration-count: .5;
+}
+.modal{
+visibility: hidden;
 }
