@@ -7,6 +7,8 @@ var crystal4 = 0;
 var win = 0;
 
 var game = function () {
+    totalGuess = 0;
+    $("#totalGuessShow").text(totalGuess);
     winNum = Math.floor((Math.random() * 100 + 2) + 9);
     console.log("win", winNum);
     $("#winNumShow").text(winNum);
@@ -27,10 +29,14 @@ var game = function () {
         } else if (winNum === totalGuess) {
             alert("win");
             win = win + 1;
-            ("#win").text(win);
+            $("#win").text(win);
+            totalGuess = 0;
+            $("#totalGuessShow").text(totalGuess);
             game();
         } else {
             alert("you lose");
+            totalGuess = 0;
+            $("#totalGuessShow").text(totalGuess);
             game();
         };
     };
@@ -42,10 +48,14 @@ var game = function () {
         } else if (winNum === totalGuess) {
             alert("win");
             win = win + 1;
-            ("#win").text(win);
+            $("#win").text(win);
+            totalGuess = 0;
+            $("#totalGuessShow").text(totalGuess);
             game();
         } else {
             alert("you lose");
+            totalGuess = 0;
+            $("#totalGuessShow").text(totalGuess);
             game();
         };
     };
@@ -57,10 +67,14 @@ var game = function () {
         } else if (winNum === totalGuess) {
             alert("win");
             win = win + 1;
-            ("#win").text(win);
+            $("#win").text(win);
+            totalGuess = 0;
+            $("#totalGuessShow").text(totalGuess);
             game();
         } else {
             alert("you lose");
+            totalGuess = 0;
+            $("#totalGuessShow").text(totalGuess);
             game();
         };
     };
@@ -72,16 +86,36 @@ var game = function () {
         } else if (winNum === totalGuess) {
             alert("win");
             win = win + 1;
-            ("#win").text(win);
+            $("#win").text(win);
+            totalGuess = 0;
+            $("#totalGuessShow").text(totalGuess);
             game();
         } else {
             alert("you lose");
+            totalGuess = 0;
+            $("#totalGuessShow").text(totalGuess);
             game();
         };
     };
-    $("#crystal1").on("click", click1);
-    $("#crystal2").on("click", click2);
-    $("#crystal3").on("click", click3);
-    $("#crystal4").on("click", click4);
-}
+
+    // var click = function () {
+    //     if (parseInt(winNum) > parseInt(totalGuess)) {
+    //         totalGuess = parseInt(totalGuess) + parseInt($(this).value());
+    //         $("#totalGuessShow").text(totalGuess);
+    //         console.log("tG", totalGuess);
+    //     } else if (winNum === totalGuess) {
+    //         alert("win");
+    //         win = win + 1;
+    //         $("#win").text(win);
+    //         game();
+    //     } else {
+    //         alert("you lose");
+    //         game();
+    //     };
+    // };
+    $("#crystal1").on("click", click);
+    $("#crystal2").on("click", click);
+    $("#crystal3").on("click", click);
+    $("#crystal4").on("click", click);
+};
 game();
