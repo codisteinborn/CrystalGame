@@ -42,6 +42,3 @@ h1{
     animation: shake 0.5s;
     animation-iteration-count: .5;
 }
-.modal{
-visibility: hidden;
-}
