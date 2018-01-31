@@ -30,12 +30,10 @@ var click = function () {
         $("#totalGuessShow").text(totalGuess);
         console.log("tG", totalGuess);
     } else if (winNum === totalGuess) {
-        // $('#myModal').addClass(".modal")
         win++;
         $("#win").text(win);
         setup();
     } else {
-        // $(".modal").removeClass("modal");
         loss++
         $("#loss").text(loss);
         setup();
