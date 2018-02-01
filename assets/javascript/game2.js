@@ -10,7 +10,8 @@ var setup = function () {
     winNum = Math.floor((Math.random() * 100 + 2) + 9);
     $("#winNumShow").attr("value", winNum);
     $("#winNumShow").text(winNum);
-    // $(".modal").addClass("modal");
+    $("#loss").text(loss);
+    $("#win").text(win);
 
     var createNums = function () {
         for (var i = 0; i < 4; i++) {
@@ -28,7 +29,6 @@ var click = function () {
     totalGuess = parseInt(totalGuess) + parseInt($(this).attr("value"));
     $("#totalGuessShow").text(totalGuess);
     if (parseInt(winNum) > parseInt(totalGuess)) {
-        console.log("tG", totalGuess);
     } else if (winNum === totalGuess) {
         win++;
         $("#win").text(win);
@@ -39,7 +39,6 @@ var click = function () {
         setTimeout(function () { setup(); }, 2000);
     };
 };
-
 $("#crystal1").on("click", click);
 $("#crystal2").on("click", click);
 $("#crystal3").on("click", click);
