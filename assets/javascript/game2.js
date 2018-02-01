@@ -26,17 +26,17 @@ var setup = function () {
 setup();
 var click = function () {
     totalGuess = parseInt(totalGuess) + parseInt($(this).attr("value"));
+    $("#totalGuessShow").text(totalGuess);
     if (parseInt(winNum) > parseInt(totalGuess)) {
-        $("#totalGuessShow").text(totalGuess);
         console.log("tG", totalGuess);
     } else if (winNum === totalGuess) {
         win++;
         $("#win").text(win);
-        setup();
+        setTimeout(function () { setup(); }, 2000);
     } else {
         loss++
         $("#loss").text(loss);
-        setup();
+        setTimeout(function () { setup(); }, 2000);
     };
 };
 
